@@ -1,0 +1,55 @@
+.circular-timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 rem(-20);
+}
+
+.circular-timer__item {
+  position: relative;
+  margin: 0 rem(20);
+}
+
+.circular-timer-data {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.circular-timer-data > span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.circular-timer-data .value {
+  font-size: rem(36);
+  line-height: rem(42);
+}
+
+.circular-timer-data .text {
+  font-size: rem(12);
+  line-height: rem(14);
+  letter-spacing: 1px;
+  margin-top: rem(8);
+  color: rgba(36, 36, 36, 0.5);
+}
+
+.circular-timer__item svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.circular-timer__item svg circle {
+  stroke-linecap: round;
+}
+/*# sourceMappingURL=style.css.map */

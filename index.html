@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="circular-timer" data-date="2020-06-01 00:00:00">
+		<div class="circular-timer__item days">
+			<span class="circular-timer-data">
+				<span class="value">0</span>
+				<span class="text">days</span>
+			</span>
+			<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M124 62C124 96.2417 96.2417 124 62 124C27.7583 124 0 96.2417 0 62C0 27.7583 27.7583 0 62 0C96.2417 0 124 27.7583 124 62ZM6.2 62C6.2 92.8175 31.1825 117.8 62 117.8C92.8175 117.8 117.8 92.8175 117.8 62C117.8 31.1825 92.8175 6.2 62 6.2C31.1825 6.2 6.2 31.1825 6.2 62Z" fill="#F2F5FC"/>
+				<circle class="progress" cx="62" cy="62" r="59" stroke-width="6" stroke="url(#paint0_linear)"/>
+				<defs>
+					<linearGradient id="paint0_linear" x1="0" y1="124" x2="-5.74745e-06" y2="-7.63077" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#FF1C8C"/>
+						<stop offset="1" stop-color="#FFE6D4"/>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="circular-timer__item hours">
+			<span class="circular-timer-data">
+				<span class="value">0</span>
+				<span class="text">hours</span>
+			</span>
+			<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M124 62C124 96.2417 96.2417 124 62 124C27.7583 124 0 96.2417 0 62C0 27.7583 27.7583 0 62 0C96.2417 0 124 27.7583 124 62ZM6.2 62C6.2 92.8175 31.1825 117.8 62 117.8C92.8175 117.8 117.8 92.8175 117.8 62C117.8 31.1825 92.8175 6.2 62 6.2C31.1825 6.2 6.2 31.1825 6.2 62Z" fill="#F2F5FC"/>
+				<circle class="progress" cx="62" cy="62" r="59" stroke-width="6" stroke="url(#paint0_linear)"/>
+				<defs>
+					<linearGradient id="paint0_linear" x1="0" y1="124" x2="-5.74745e-06" y2="-7.63077" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#FF1C8C"/>
+						<stop offset="1" stop-color="#FFE6D4"/>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="circular-timer__item minutes">
+			<span class="circular-timer-data">
+				<span class="value">0</span>
+				<span class="text">minutes</span>
+			</span>
+			<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M124 62C124 96.2417 96.2417 124 62 124C27.7583 124 0 96.2417 0 62C0 27.7583 27.7583 0 62 0C96.2417 0 124 27.7583 124 62ZM6.2 62C6.2 92.8175 31.1825 117.8 62 117.8C92.8175 117.8 117.8 92.8175 117.8 62C117.8 31.1825 92.8175 6.2 62 6.2C31.1825 6.2 6.2 31.1825 6.2 62Z" fill="#F2F5FC"/>
+				<circle class="progress" cx="62" cy="62" r="59" stroke-width="6" stroke="url(#paint0_linear)"/>
+				<defs>
+					<linearGradient id="paint0_linear" x1="0" y1="124" x2="-5.74745e-06" y2="-7.63077" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#FF1C8C"/>
+						<stop offset="1" stop-color="#FFE6D4"/>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="circular-timer__item seconds">
+			<span class="circular-timer-data">
+				<span class="value">0</span>
+				<span class="text">seconds</span>
+			</span>
+			<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M124 62C124 96.2417 96.2417 124 62 124C27.7583 124 0 96.2417 0 62C0 27.7583 27.7583 0 62 0C96.2417 0 124 27.7583 124 62ZM6.2 62C6.2 92.8175 31.1825 117.8 62 117.8C92.8175 117.8 117.8 92.8175 117.8 62C117.8 31.1825 92.8175 6.2 62 6.2C31.1825 6.2 6.2 31.1825 6.2 62Z" fill="#F2F5FC"/>
+				<circle class="progress" cx="62" cy="62" r="59" stroke-width="6" stroke="url(#paint0_linear)"/>
+				<defs>
+					<linearGradient id="paint0_linear" x1="0" y1="124" x2="-5.74745e-06" y2="-7.63077" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#FF1C8C"/>
+						<stop offset="1" stop-color="#FFE6D4"/>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+	</div>
+
+	<script>
+		var circularTimer = function(el) {
+			this.timerBlock         = el;
+			this.daysCircle         = this.timerBlock.querySelector('.circular-timer__item.days');
+			this.hoursCircle        = this.timerBlock.querySelector('.circular-timer__item.hours');
+			this.minutesCircle      = this.timerBlock.querySelector('.circular-timer__item.minutes');
+			this.secondsCircle      = this.timerBlock.querySelector('.circular-timer__item.seconds');
+			this.RADIUS             = 59;
+			this.CIRCUMFERENCE      = 2 * Math.PI * this.RADIUS;
+			this.countDownDate      = new Date(this.timerBlock.dataset.date).getTime();
+			this.now                = new Date().getTime();
+			this.distance           = this.countDownDate - this.now;
+			this.SECONDS_MULTIPLIER = 10;
+			this.computedArr        = {
+				"days"    : Math.floor(this.distance / (1000 * 60 * 60 * 24)),
+				"hours"   : Math.floor((this.distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+				"minutes" : Math.floor((this.distance % (1000 * 60 * 60)) / (1000 * 60)),
+				"seconds" : Math.floor((this.distance % (1000 * 60)) / 1000),
+			};
+			this.tempData           = {
+				"days"    : this.computedArr["days"],
+				"hours"   : this.computedArr["hours"],
+				"minutes" : this.computedArr["minutes"],
+				"seconds" : this.computedArr["seconds"] * this.SECONDS_MULTIPLIER,
+			};
+			this.BASE_LENGTH        = {
+				"days": 365,
+				"hours": 24,
+				"minutes": 60,
+				"seconds": 60
+			};
+
+			this.daysCircle.querySelector('.progress').style.strokeDasharray = this.CIRCUMFERENCE;
+			this.hoursCircle.querySelector('.progress').style.strokeDasharray = this.CIRCUMFERENCE;
+			this.minutesCircle.querySelector('.progress').style.strokeDasharray = this.CIRCUMFERENCE;
+			this.secondsCircle.querySelector('.progress').style.strokeDasharray = this.CIRCUMFERENCE;
+
+
+			this.drawProgress  = function (element, type, length, multiply = 1) {
+				var progress = length / ( this.BASE_LENGTH[type] * multiply );
+				var dashoffset = this.CIRCUMFERENCE * (1 - progress);
+
+				element.querySelector('.value').textContent = Math.floor(length / multiply);
+				element.querySelector('.progress').style.strokeDashoffset = dashoffset;
+			};
+
+			this.startCountdown = setInterval(function(context){
+
+				var days    = Math.floor(context.distance / (1000 * 60 * 60 * 24)),
+					hours   = Math.floor((context.distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+					minutes = Math.floor((context.distance % (1000 * 60 * 60)) / (1000 * 60)),
+					seconds = (context.distance % (1000 * 60) / 1000) * context.SECONDS_MULTIPLIER;
+
+				if ( seconds <= 0 && minutes <= 0 && hours <= 0 && days <= 0 )
+				{
+					context.stopCountdown();
+					context.setZero
+				}
+
+				context.drawProgress(context.secondsCircle, "seconds", seconds, context.SECONDS_MULTIPLIER);
+				context.drawProgress(context.minutesCircle, "minutes", minutes);
+				context.drawProgress(context.hoursCircle, "hours", hours);
+				context.drawProgress(context.daysCircle, "days", days);
+
+				context.distance -= (1000 / context.SECONDS_MULTIPLIER);
+			}, 1000 / this.SECONDS_MULTIPLIER, this);
+
+			this.stopCountdown = function(){
+				clearInterval(this.startCountdown);
+			};
+
+			this.setZero = function () {
+				this.drawProgress(this.secondsCircle, "seconds", 0);
+				this.drawProgress(this.minutesCircle, "minutes", 0);
+				this.drawProgress(this.hoursCircle, "hours", 0);
+				this.drawProgress(this.daysCircle, "days", 0);
+			}
+		};
+
+		var introTimer = new circularTimer( document.querySelector('.circular-timer') );
+
+	</script>
+</body>
+</html>

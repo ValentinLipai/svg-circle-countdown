@@ -1,0 +1,42 @@
+.circular-timer
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin: 0 rem(-20)
+
+
+.circular-timer__item
+    position: relative
+    margin: 0 rem(20)
+
+
+.circular-timer-data
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    transform: translateY(-50%)
+
+
+.circular-timer-data > span
+    display: block
+    text-align: center
+    text-transform: uppercase
+
+
+.circular-timer-data .value
+    font-size: rem(36)
+    line-height: rem(42)
+
+.circular-timer-data .text
+    font-size: rem(12)
+    line-height: rem(14)
+    letter-spacing: 1px
+    margin-top: rem(8)
+    color: rgba(#242424, 0.5)
+
+.circular-timer__item svg
+    transform: rotate(-90deg)
+    circle
+        stroke-linecap: round
+    
